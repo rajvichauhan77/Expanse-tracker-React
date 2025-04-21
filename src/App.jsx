@@ -60,7 +60,7 @@ function App() {
   };
 
   const totalExpenses = transaction.reduce((acc, curr) => acc + Number(curr.amount), 0);
-  const balance = salary - totalExpenses;
+  const balance = salary + totalExpenses;
 
   return (
     <div className="m-auto p-3">
